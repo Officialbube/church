@@ -509,7 +509,7 @@ a.give-btn{
   
 }
 
-.pastor .pastor-details{
+.pastor-details{
   width: 40%;
   height: auto;
   background-image: url('/images/pastor2.jpg');
@@ -517,6 +517,7 @@ a.give-btn{
   background-size: cover;
   border-radius: 10px;
   padding: 40px 30px;
+  align-content: center;
 
 }
 
@@ -527,8 +528,9 @@ a.give-btn{
 }
 
 
-.pastor .pastor-desc{
+.pastor-desc{
   width: 50%;
+  align-content: center;
   
  
   
@@ -538,6 +540,7 @@ a.give-btn{
   width: 80%;
   margin-top: 20px;
   line-height: 30px;
+  text-align: justify;
 
 }
 
