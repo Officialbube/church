@@ -1273,6 +1273,18 @@ a.give-btn{
   padding: 60px 80px;
 }
 
+.details-sec-belief {
+  position: relative;
+  height: 50vh;
+  width: auto;
+  overflow: hidden;
+  background-color: #eaf6f7;  /* White background */
+  color: black;  /* Text color for sections with white background */
+  padding: 60px 80px;
+  margin-top: 50px;
+}
+
+
 
 .details-contain-sec {
   display: flex;
