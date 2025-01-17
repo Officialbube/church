@@ -1281,7 +1281,43 @@ a.give-btn{
   background-color: #eaf6f7;  /* White background */
   color: black;  /* Text color for sections with white background */
   padding: 60px 80px;
-  margin-top: 50px;
+  margin-top: 60px;
+}
+
+.give-online-details{
+  width: 100%;
+  height: 80vh;
+  background-color: #a4f5dc;
+  display: flex;
+  justify-content: center;
+  padding: 60px 90px;
+  gap: 100px;
+  color: #000;
+}
+
+.give-online-details-contain{
+  padding: 60px 90px;
+}
+
+.give-online-title{
+  color: #1d1c1c;
+  font-size: 2.5rem;
+}
+
+.givenow{
+  letter-spacing: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1b1f23;
+}
+
+.give-online-paragraph{
+  color: #26253b;
+  margin-top: 30px;
+}
+.give-online-mail{
+  color: #26253b;
+  font-size: 3.5rem;
 }
 
 
