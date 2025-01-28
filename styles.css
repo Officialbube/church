@@ -1298,7 +1298,7 @@ a.give-btn{
   height: 70vh;
   width: auto;
   overflow: hidden;
-  background-color: #eaf6f7;  /* White background */
+  background-color: #eaf6f7; 
   color: black;  /* Text color for sections with white background */
   padding: 60px 80px;
   margin-top: 60px;
@@ -1307,7 +1307,7 @@ a.give-btn{
 .give-online-details{
   width: 100%;
   height: 80vh;
-  background-color: #a4f5dc;
+  background-color: #eaf6f7;
   display: flex;
   justify-content: center;
   padding: 60px 90px;
