@@ -613,8 +613,16 @@ a.give-btn{
   line-height: 85px;
 }
 
-.s23-main-claim-text.s23-orange-text {
+
+.s23-orange-text {
   color: #f84f39;
+  font-size: 60px;
+}
+
+.s23-orange-text_paragaraph{
+  color: #2c2828;
+  font-size: 20px;
+
 }
 
 .s23-superlist-logo-link {
@@ -718,7 +726,6 @@ a.give-btn{
   align-items: center;
   width: 100%;
   min-width: 50%;
-  font-size: 55px;
   font-weight: 600;
   line-height: 55px;
   display: flex;
@@ -823,6 +830,7 @@ a.give-btn{
   display: flex;
 }
 
+
 .s23-pitchdeck-left.s23-dark-mode-hide-special-1 {
   display: none;
 }
@@ -870,7 +878,7 @@ a.give-btn{
 
 .s23-pitchdeck-right.s23-pitch-right-5 {
   background-color: #f84f38;
-  background-image: url("/images/cong_6.jpg");
+  background-image: url("/images/cong_pastor_wife_02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -920,7 +928,10 @@ a.give-btn{
 
 .s23-main-claim-text.s23-orange-text {
   color: #f84f39;
+  font-size: 20px;
 }
+
+
 
 .s23-superlist-logo-link {
   width: 140px;
