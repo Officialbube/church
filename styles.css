@@ -360,9 +360,16 @@ a.give-btn{
   color: rgb(0, 0, 0);
   padding: 20px 20px;
   border-radius: 5px;
-  display: none; /* Initially hidden */
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Add transition for smooth visibility */
   z-index: 1000;
   margin-top: 20px;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  opacity: 1; /* Show the menu */
+  visibility: visible; /* Show the menu */
 }
 
 
