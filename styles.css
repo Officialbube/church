@@ -127,6 +127,11 @@ header{
   z-index: 2;
 }
 
+.head{
+  font-size: 2.5rem;
+  color: #c3ba5c;
+}
+
 .hero-content-ministries h1 {
   font-size: 4rem; 
   margin-bottom: 20px;
