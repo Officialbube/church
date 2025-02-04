@@ -189,6 +189,7 @@ header{
   font-weight: 800;
 }
 
+
 .cta-btn {
   display: inline-block;
   padding: 20px 40px;
@@ -889,7 +890,7 @@ a.give-btn{
 
 .give-online-title{
   color: #1d1c1c;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .givenow{
@@ -900,11 +901,11 @@ a.give-btn{
 }
 
 .give-online-paragraph{
-  color: #26253b;
+  color: #141414;
   margin-top: 30px;
 }
 .give-online-mail{
-  color: #26253b;
+  color: #2a2c2b;
   font-size: 3.5rem;
 }
 
@@ -963,7 +964,7 @@ a.give-btn{
   border-bottom: #e6e4e4 2px solid;
   margin-bottom: 20px; /* Add space between items */
   padding-bottom: 10px; /* Add padding to the bottom of each item */
-  color: #242323;
+  color: #2a2c2b;
   font-weight: 600;
 }
 
@@ -978,8 +979,8 @@ a.give-btn{
 }
 
 .schedule h1{
-  color: #16553d;
-  font-size: 2rem;
+  color: #2a2c2b;
+  font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 20px;
 }
