@@ -28,7 +28,7 @@ header{
   background-color: #000;
   top: 0;
   z-index: 1000;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
 }
 
