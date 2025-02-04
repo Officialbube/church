@@ -1,6 +1,6 @@
 /* General Reset */
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Encode+Sans:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ubuntu&family=Encode+Sans:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 * {
   margin: 0;
@@ -20,16 +20,14 @@ header{
 }
 
 .navbar {
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   padding: 20px 70px;
   gap: 40px;
   background-color: #000;
-  top: 0;
-  z-index: 1000;
-  /* justify-content: space-between; */
-
+  flex-wrap: wrap; /* Allow content to wrap within the navbar */
 }
 
 .logo img{
@@ -638,12 +636,10 @@ a.give-btn{
 
 
 .pastor{
-  width: 100%;
-  height: 80vh;
   background-color: #555555;
   display: flex;
   justify-content: center;
-  padding: 40px 30px;
+  padding: 80px;
   gap: 100px;
   
 }
@@ -1079,3 +1075,160 @@ a.give-btn{
 }
 
 
+/* Responsive Design */
+
+/* Extra small devices (phones, 320px and up) */
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content {
+    padding: 50px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .ministries-page {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .ministries-page img {
+    width: 100%;
+    height: auto;
+  }
+
+  .ministries-page-text {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .service {
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .service-details {
+    width: 100%;
+  }
+
+  .service-details h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Small devices (tablets, 481px - 768px) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .navbar .nav-links {
+    gap: 10px;
+  }
+
+  .hero-content {
+    padding: 80px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .ministries-page {
+    flex-direction: column;
+    padding: 50px 30px;
+    gap: 40px;
+  }
+
+  .ministries-page img {
+    width: 100%;
+    height: auto;
+  }
+
+  .service {
+    flex-direction: column;
+    padding: 60px 30px;
+  }
+
+  .service-details {
+    width: 100%;
+  }
+
+  .service-details h1 {
+    font-size: 3rem;
+  }
+
+  .left-text,
+  .right-text {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+/* Medium devices (laptops, 769px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 20px 50px;
+  }
+
+  .navbar .nav-links {
+    gap: 15px;
+  }
+
+  .hero-content {
+    padding: 100px 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .ministries-page {
+    padding: 60px 50px;
+  }
+
+  .ministries-page img {
+    width: 50%;
+    height: auto;
+  }
+
+  .service {
+    padding: 70px 50px;
+  }
+
+  .service-details {
+    width: 70%;
+  }
+}
+
+/* Large devices (desktops, 1025px and up) */
+@media screen and (min-width: 1025px) {
+  .hero-content {
+    padding: 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .ministries-page {
+    padding: 70px 90px;
+  }
+
+  .service {
+    padding: 80px 60px;
+  }
+}
