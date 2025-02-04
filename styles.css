@@ -214,7 +214,6 @@ header{
 .details-ministies-ministry-paragraph{
   color: #2a2c2b;
   font-size: 1.5rem;
-  text-align: justify;
 }
 
 .ministries-page-text{
@@ -223,11 +222,6 @@ header{
   color: #2a2c2b;
 }
 
-.details-ministies-ministry-paragraph{
-  color: #2a2c2b;
-  font-size: 1.5rem;
-  text-align: justify;
-}
 
 
 .cta-btn {
