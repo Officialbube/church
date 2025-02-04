@@ -189,6 +189,49 @@ header{
   font-weight: 800;
 }
 
+.ministries-page{
+  padding: 70px 90px;
+  display: flex;
+  width: 100%;
+  background-color: #eaf6f7;
+  gap: 60px;
+
+}
+
+.ministries-page-img{
+  width: 40%;
+  height: 80vh;
+  background-image: url('/images/cong_7.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.details-ministies-ministry{
+  display: flex;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #2a2c2b;
+}
+
+.details-ministies-ministry-paragraph{
+  color: #2a2c2b;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.ministries-page-text{
+  width: 60%;
+  padding: 20px 30px;
+  color: #2a2c2b;
+}
+
+.details-ministies-ministry-paragraph{
+  color: #2a2c2b;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
 
 .cta-btn {
   display: inline-block;
