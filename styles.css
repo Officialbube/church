@@ -198,12 +198,9 @@ header{
 
 }
 
-.ministries-page-img{
+.ministries-page img{
   width: 40%;
   height: 80vh;
-  background-image: url('/images/cong_7.jpg');
-  background-size: cover;
-  background-position: center;
   border-radius: 10px;
 }
 
