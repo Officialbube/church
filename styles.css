@@ -967,6 +967,16 @@ a.give-btn{
   font-weight: 600;
 }
 
+.schedule-bottom{
+  border-bottom: #e6e4e4 2px solid;
+  margin-bottom: 20px; /* Add space between items */
+  padding-bottom: 20px; /* Add padding to the bottom of each item */
+  color: #2a2c2b;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+}
+
 .schedule h1{
   color: #16553d;
   font-size: 2rem;
