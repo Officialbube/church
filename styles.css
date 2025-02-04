@@ -744,6 +744,10 @@ a.give-btn{
   display: block;
 }
 
+.our-bishop .main{
+  width: 100%;
+  padding: 40px 0px;
+}
 
 
 @media (max-width: 768px) {
@@ -784,16 +788,19 @@ a.give-btn{
     text-align: center;
   }
 
-  /* .left-text {
-    width: 100%;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+  .details{
+    display: block;
   }
 
-  .right-text {
-    font-size: 1rem;
-    max-width: 100%;
-  } */
+  .hero{
+    height: 100vh;
+  }
+
+  .hero-content{
+    display: block;
+  }
+
+
 
   /* Carousel Section */
   .carousel-container {
