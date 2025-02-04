@@ -22,11 +22,12 @@ header{
   position: relative;
   display: flex;
   align-items: center;
-  padding: 20px 20px;
+  padding: 20px 70px;
   gap: 40px;
   background-color: #000;
   top: 0;
   z-index: 1000;
+  justify-content: space-between;
 
 }
 
@@ -189,15 +190,14 @@ header{
 }
 
 .cta-btn {
-  height: 40px;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 20px 40px;
   background-color: #e9af10;
   color: black;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
+  border-radius: 2px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .cta-btn:hover {
@@ -245,10 +245,53 @@ a.give-btn{
   width: 100%;
   background-color: #e9af10;  /* White background */
   color: black;  /* Text color for sections with white background */
-  padding: 15px 80px;
+  padding: 30px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 30px;
+}
+
+.service{
+  width: 100%;
+  padding: 80px 40px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+
+.service-details {
+  color: #242323;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 30px; /* Add padding for spacing */
+  line-height: 1.6; /* Increase line height for better readability */
+}
+
+.service-details a{
+  margin-top: 20px;
+}
+
+.service-details h1{
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: 'Ubuntu', sans-serif; 
+  letter-spacing: -3px;
+}
+
+.address{
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  gap: 60px;
+  justify-items: space-between;
+  
 }
 
 .follow{
