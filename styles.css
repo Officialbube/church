@@ -26,9 +26,11 @@ header{
   align-items: center;
   padding: 20px 70px;
   gap: 60px;
-  background-color: #000;
-
+  background-color: #ffffff;
+  justify-content: space-between; /* Ensure items are spaced out within the header */
 }
+
+
 
 .logo img{
   width: 120px;
@@ -39,13 +41,13 @@ header{
 .navbar .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 40px;
   font-weight: 900;
 }
 
 .navbar .nav-links a {
   text-decoration: none;
-  color: rgb(241, 241, 241);
+  color: black;
   transition: color 0.3s ease;
   font-family: 'Encode Sans', sans-serif;  /* Ensure links use Encode Sans font */
   font-weight: 600;
@@ -647,11 +649,9 @@ a.give-btn{
   width: 40%;
   height: auto;
   background-image: url('/images/pastor2.jpg');
-  background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
   padding: 40px 30px;
-  align-content: center;
 
 }
 
