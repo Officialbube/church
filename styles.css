@@ -32,7 +32,7 @@ header{
 
 
 
-.logo img{
+.logo img {
   width: 120px;
   height: auto;
 
@@ -51,8 +51,7 @@ header{
   transition: color 0.3s ease;
   font-family: 'Encode Sans', sans-serif;  /* Ensure links use Encode Sans font */
   font-weight: 600;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
+  font-size: 16px;
 }
 
 .navbar .nav-links a:hover {
