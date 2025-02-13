@@ -275,11 +275,10 @@ a.give-btn{
 
 /* Details Section */
 .details {
-  height: auto;
   width: 100%;
   background-color: #e9af10;  /* White background */
   color: black;  /* Text color for sections with white background */
-  padding: 30px 20px;
+  padding: 15px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -721,7 +720,7 @@ a.give-btn{
   align-content: center;
   justify-content: center;
   justify-self: center;
-  opacity: 90%;
+  opacity: 96%;
 
 }
 
