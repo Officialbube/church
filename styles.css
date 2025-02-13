@@ -25,9 +25,9 @@ header{
   display: flex;
   align-items: center;
   padding: 20px 70px;
-  gap: 40px;
+  gap: 60px;
   background-color: #000;
-  flex-wrap: wrap; /* Allow content to wrap within the navbar */
+
 }
 
 .logo img{
