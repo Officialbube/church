@@ -640,18 +640,19 @@ a.give-btn{
   display: flex;
   justify-content: center;
   padding: 80px;
-  gap: 100px;
+  gap: 60px;
   
 }
 
-.pastor-details{
-  width: 40%;
+.ministers-img {
+  width: 60%;
   height: auto;
-  background-image: url('/images/pastor2.jpg');
-  background-size: cover;
+  max-height: 80vh;
+  background-size: contain;
+  background-position: center;
   border-radius: 10px;
   padding: 40px 30px;
-
+  object-fit: cover;
 }
 
 .pst{
