@@ -208,6 +208,18 @@ padding: 40px 50px;
     min-width: 300px;
     height: 300px !important;
   }
+  .hero-content{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100%;
+    
+  }
+  .hero-content h1{
+    font-size: 1.5rem !important;
+    padding: 0 !important;
+    white-space: normal !important;
+  }
+  
 }
 
 .service-details {
