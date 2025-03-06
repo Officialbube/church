@@ -23,3 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+function ty(){
+    document.getElementById('first').classList.toggle('trans');
+    document.getElementById('last').classList.toggle('trans-t');
+    document.getElementById('none').classList.toggle('dispp');
+    document.getElementById('navs').classList.toggle('new');
+}

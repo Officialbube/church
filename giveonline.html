@@ -13,19 +13,21 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar" >
+      
       <div class="logo">
         <img src="/images/HTAC_Logo.png" alt="Htacnashville Logo">
+        <img src="/images/Diocesan Logo.png" width="70px" height="auto" alt="Htacnashville Logo" style="display: none;">
       </div>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navs">
         <li><a href="/index.html">HOME</a></li>
         <li class="dropdown">
           <a href="#">ABOUT US</a>
-            <ul class="dropdown-menu">
-              <li><a href="/about.html">Our Belief</a></li>
-              <li><a href="/ourmission.html">Our Mission</a></li>
-              
-            </ul>
+          <ul class="dropdown-menu">
+            <li><a href="/about.html">Our Belief</a></li>
+            <li><a href="/ourmission.html">Our Mission</a></li>
+
+          </ul>
         </li>
         <li class="dropdown">
           <a href="#">MINISTERS</a>
@@ -34,8 +36,8 @@
             <li><a href="/rector.html">Our Rector</a> </li>
             <li><a href="/ourcatechists.html"> Our Catechists</a> </li>
             <li><a href="/layreaders.html"> Our Lay Readers</a> </li>
-            
-        </ul>
+
+          </ul>
         </li>
         <li class="dropdown">
           <a href="/churchschedule.html">SCHEDULES</a>
@@ -47,16 +49,27 @@
             <li><a href="/womenministry.html">Women’s Ministry</a> </li>
             <li><a href="/youthministry.html">Youth & Young Adults</a> </li>
             <li><a href="/childrenministry.html">Children’s Ministry</a> </li>
-            
-        </ul>
+
+          </ul>
         </li>
         <li><a href="/events.html">EVENTS</a></li>
         <li><a href="/contactus.html">CONTACT US</a></li>
+        <a href="/giveonline.html" class="give-btn">GIVE ONLINE</a>
+        <div class="logo1">
+          <img src="/images/Diocesan Logo.png" width="70px" height="auto" alt="Htacnashville Logo" >
+        </div>
+       
+        
+
+        <i class="fa fa-times" aria-hidden="true" onclick="ty();" style="display: none;"></i>
       </ul>
-      <a href="/giveonline.html" class="give-btn">GIVE ONLINE</a>
-      <div class="logo1">
-        <img src="/images/Diocesan Logo.png" width="70px" height="auto" alt="Htacnashville Logo">
-      </div>
+
+      <div class="toggle-nav" onclick="ty();" style="display: none;">
+        <span id="first"></span>
+        <span id="none"></span>
+        <span id="last"></span>
+    </div>
+
     </nav>
   </header>
 

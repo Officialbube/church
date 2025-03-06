@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Holy Trinity Anglican Church, Nashville</title>
-<link rel="icon" href="/images/favicon.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="/images/favicon.png">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
-<script src="https://kit.fontawesome.com/7353270fb8.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Trinity Anglican Church, Nashville</title>
+  <link rel="icon" href="/images/favicon.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
+  <script src="https://kit.fontawesome.com/7353270fb8.js" crossorigin="anonymous"></script>
 </head>
+<style>
+
+</style>
+
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar" >
+      
       <div class="logo">
         <img src="/images/HTAC_Logo.png" alt="Htacnashville Logo">
+        <img src="/images/Diocesan Logo.png" width="70px" height="auto" alt="Htacnashville Logo" style="display: none;">
       </div>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navs">
         <li><a href="/index.html">HOME</a></li>
         <li class="dropdown">
           <a href="#">ABOUT US</a>
-            <ul class="dropdown-menu">
-              <li><a href="/about.html">Our Belief</a></li>
-              <li><a href="/ourmission.html">Our Mission</a></li>
-              
-            </ul>
+          <ul class="dropdown-menu">
+            <li><a href="/about.html">Our Belief</a></li>
+            <li><a href="/ourmission.html">Our Mission</a></li>
+
+          </ul>
         </li>
         <li class="dropdown">
           <a href="#">MINISTERS</a>
@@ -34,8 +43,8 @@
             <li><a href="/rector.html">Our Rector</a> </li>
             <li><a href="/ourcatechists.html"> Our Catechists</a> </li>
             <li><a href="/layreaders.html"> Our Lay Readers</a> </li>
-            
-        </ul>
+
+          </ul>
         </li>
         <li class="dropdown">
           <a href="/churchschedule.html">SCHEDULES</a>
@@ -47,38 +56,53 @@
             <li><a href="/womenministry.html">Women’s Ministry</a> </li>
             <li><a href="/youthministry.html">Youth & Young Adults</a> </li>
             <li><a href="/childrenministry.html">Children’s Ministry</a> </li>
-            
-        </ul>
+
+          </ul>
         </li>
         <li><a href="/events.html">EVENTS</a></li>
         <li><a href="/contactus.html">CONTACT US</a></li>
+        <a href="/giveonline.html" class="give-btn">GIVE ONLINE</a>
+        <div class="logo1">
+          <img src="/images/Diocesan Logo.png" width="70px" height="auto" alt="Htacnashville Logo" >
+        </div>
+       
+        
+
+        <i class="fa fa-times" aria-hidden="true" onclick="ty();" style="display: none;"></i>
       </ul>
-      <a href="/giveonline.html" class="give-btn">GIVE ONLINE</a>
-      <div class="logo1">
-        <img src="/images/Diocesan Logo.png" width="70px" height="auto" alt="Htacnashville Logo">
-      </div>
+
+      <div class="toggle-nav" onclick="ty();" style="display: none;">
+        <span id="first"></span>
+        <span id="none"></span>
+        <span id="last"></span>
+    </div>
+
     </nav>
+   
   </header>
 
   <section class="details">
-    <h1 class="details-heading">Following Christ, Touching The World With His Love  |</h1>
-    <div class="address">  <i class="fa-solid fa-location-dot fa-beat"></i> 375 Old Nashville Hwy La Vergne, TN 37086</div>
-    <div class="address"><i class="fa-solid fa-phone fa-beat"></i>  (615)625-6188 </div>
-  </div>
+    <h1 class="details-heading">Following Christ, Touching The World With His Love |</h1>
+    <div class="address"> <i class="fa-solid fa-location-dot fa-beat"></i> 375 Old Nashville Hwy La Vergne, TN 37086
+    </div>
+    <div class="address"><i class="fa-solid fa-phone fa-beat"></i> (615)625-6188 </div>
+    </div>
 
-</section>
+  </section>
 
   <section class="hero-content">
-          <div class="welcome">
-            <h6>🌍 WELCOME</h6>
-          </div>
-          <h1 id="hero-heading">Holy Trinity <br>Anglican Church, Nashville TN<br><span class="head">Anglican Diocese of All Nations</span></h1>
-          <!-- <a href="#movement" class="cta-btn" id="hero-button">Watch Live</a> -->
+    <div class="welcome">
+      <h6>🌍 WELCOME</h6>
+    </div>
+    <!-- <h1 id="hero-heading">Holy Trinity <br>Anglican Church, Nashville TN<br><span class="head">Anglican Diocese of All Nations</span></h1> --> -->
+     <a href="#movement" class="cta-btn" id="hero-button">Watch Live</a>
   </section>
 
   <section class="service">
     <div class="youtube"></div>
-    <iframe title="YouTube video player" width="60%" height="300vh" src="https://www.youtube.com/embed/6lhc0lnl1eU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="YouTube video player" width="60%"  src="https://www.youtube.com/embed/6lhc0lnl1eU"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
     <div class="service-details">
       <h1 class="hero-heading">Sunday Service</h1>
       <p>Join us for our weekly services, where we gather to worship, pray, and grow in faith together.</p>
@@ -125,7 +149,7 @@
           </div>
     </div>
   </section> -->
-  
+
 
   <!-- <section class="custom-section">
     <div class="s23-pitchdeck-outer-container"><div class="s23-pitchdeck-slide-outer">
@@ -157,9 +181,9 @@
           </section>
      -->
 
-  
-    
-    <!-- <section class="pastor">
+
+
+  <!-- <section class="pastor">
       <div class="pastor-details">
       </div>
       <div class="pastor-desc">
@@ -170,107 +194,127 @@
         <div class="cta-btn"><a href="/bishop.html">READ MORE</a> </div>
       </div>
     </section> -->
-  
 
-    <section class="footer">
-      <div class="footer-contain">
-        <div class="menu">
-          <ul>
-            <li>
-              <h4>About Us</h4>
-            </li>
-            <li>
-              <a href="/about.html"><h5>Our Belief</h5></a>
-            </li>
-            <li>
-              <a href="/ourmission.html"><h5>Our Mission</h5></a>
-            </li>
-            <li>
-              <a href="/events.html"><h5>Events</h5></a>
-            </li>
-          </ul>
+
+  <section class="footer">
+    <div class="footer-contain">
+      <div class="menu">
+        <ul>
+          <li>
+            <h4>About Us</h4>
+          </li>
+          <li>
+            <a href="/about.html">
+              <h5>Our Belief</h5>
+            </a>
+          </li>
+          <li>
+            <a href="/ourmission.html">
+              <h5>Our Mission</h5>
+            </a>
+          </li>
+          <li>
+            <a href="/events.html">
+              <h5>Events</h5>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li>
+            <h4>Ministries</h4>
+          </li>
+          <li>
+            <a href="/mcf.html">
+              <h5>Men Christian Fellowship</h5>
+            </a>
+          </li>
+          <li>
+            <a href="/womenministry.html">
+              <h5>Women Ministry</h5>
+            </a>
+          </li>
+          <li>
+            <a href="/childrenministry.html">
+              <h5>Children Ministry</h5>
+            </a>
+          </li>
+          <li>
+            <a href="/youthministry.html">
+              <h5>Youth Ministry</h5>
+            </a>
+          </li>
+        </ul>
+        </ul>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li>
+            <h4>Resources</h4>
+          </li>
+          <li>
+            <a href="/">
+              <h5>Media</h5>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <h5>Sermon</h5>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <h4>Reach-out to Us</h4>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope fa-beat"></i><a href="mailto:info@htacnashville.org">
+              info@htacnashville.org</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone fa-beat"></i><a href="mailto:info@htacnashville.org"> (615)625-6188
+            </a>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i> 375 Old Nashville Hwy
+            La Vergne, TN 37086
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="logo">
+        <img src="/images/HTAC_Logo.png" alt="Htacnashville Logo">
+      </div>
+    </div>
+    <div class="footer-line">
+      <div class="add-line">
+
+      </div>
+      <div class="copy">
+        <h6>
+          (c) Copyright 2024. Holy Trinity Anglican Church, Nashville
+        </h6>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
         </div>
 
-        <div class="menu">
-          <ul>
-            <li>
-              <h4>Ministries</h4>
-            </li>
-            <li>
-              <a href="/mcf.html"><h5>Men Christian Fellowship</h5></a>
-            </li>
-            <li>
-              <a href="/womenministry.html"><h5>Women Ministry</h5></a>
-            </li>
-            <li>
-              <a href="/childrenministry.html"><h5>Children Ministry</h5></a>
-            </li>
-            <li>
-              <a href="/youthministry.html"><h5>Youth Ministry</h5></a>
-            </li>
-          </ul>
-          </ul>
-        </div>
+      </div>
 
-        <div class="menu">
-          <ul>
-            <li>
-              <h4>Resources</h4>
-            </li>
-            <li>
-              <a href="/"><h5>Media</h5></a>
-            </li>
-            <li>
-              <a href="/"><h5>Sermon</h5></a>
-            </li>
-          </ul>
-        </div>
-        <div class="menu">
-          <ul>
-            <li>
-              <h4>Reach-out to Us</h4>
-            </li>
-            <li>
-              <i class="fa-solid fa-envelope fa-beat"></i><a href="mailto:info@htacnashville.org">  info@htacnashville.org</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-phone fa-beat"></i><a href="mailto:info@htacnashville.org">  (615)625-6188
-              </a>
-            </li>
-            <li>
-              <i class="fa-solid fa-location-dot"></i>  375 Old Nashville Hwy
-              La Vergne, TN 37086
-  
-            </li>
-          </ul>
-        </div>
-      
-        <div class="logo">
-          <img src="/images/HTAC_Logo.png" alt="Htacnashville Logo">
-        </div>
-        </div>
-        <div class="footer-line">
-          <div class="add-line">
-
-          </div>
-          <div class="copy">
-            <h6>
-              (c) Copyright 2024. Holy Trinity Anglican Church, Nashville
-          </h6>
-          <div class="social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-twitter"></i>
-          </div>
-
-          </div>
-          
-        </div>
+    </div>
 
   </section>
-  
-    
-<script src="script.js"></script>
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>

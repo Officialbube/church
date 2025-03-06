@@ -12,6 +12,7 @@ body {
   font-family: 'Encode Sans', sans-serif;  /* Apply Encode Sans font to all text */
   color: white;
   background-color: #ffffef;
+  overflow-x: hidden;
 }
 
 header{
@@ -24,12 +25,67 @@ header{
   position: relative;
   display: flex;
   align-items: center;
-  padding: 20px 70px;
+  padding: 10px 20px;
   gap: 60px;
   background-color: #ffffff;
   justify-content: space-between; /* Ensure items are spaced out within the header */
 }
 
+
+.toggle-nav{
+  width: 40px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+.toggle-nav span{
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.toggle-nav span:first-child{
+  transform: translate(-9px ,-10px);
+  width: 25px;
+
+}
+.dispp{
+  display: none !important;
+}
+.trans{
+  transform: rotate(45deg) !important;
+  width: 40px !important;
+}
+.trans-t{
+  transform: rotate(-45deg) !important;
+  width: 40px !important;
+}
+.toggle-nav span:last-child{
+  transform: translate(20px ,10px);
+  width: 25px;
+ 
+}
+.new{
+  transform: none !important;
+}
+@keyframes turn {
+  from{
+      transform: none !important;
+  }
+  to{
+      transform: rotate(360deg) !important;
+  }
+}
+.fa-times{
+top: 0;
+right: 0;
+position: absolute;
+font-size: 50px !important;
+padding: 40px 50px;
+}
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -58,13 +114,28 @@ header{
 .logo img {
   width: 150px;
   height: auto;
+  
 
 }
+.logo{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* .logo1 img{
+  width: 120px;
+  height: 90px;
+  
+} */
+
 
 .navbar .nav-links {
   list-style: none;
   display: flex;
-  gap: 40px;
+  align-items: center;
+  gap: 30px;
+  transition: all 0.4s ease-in-out;
   font-weight: 900;
 }
 
@@ -74,7 +145,7 @@ header{
   transition: color 0.3s ease;
   font-family: 'Encode Sans', sans-serif;  /* Ensure links use Encode Sans font */
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .navbar .nav-links a:hover {
@@ -108,10 +179,38 @@ header{
   text-align: center;
   justify-items: center;
   align-items: center;
-  padding: 100px;
+  padding: 50px;
   background-size: cover;
   background-position: center;
   animation: slideBackground 15s infinite;
+}
+.hero-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.service iframe {
+  flex: 1 1 600px;
+  min-width: 300px;
+}
+/* Mobile Menu Overrides */
+@media (max-width: 768px) {
+  .service iframe {
+    flex: 1 1;
+    min-width: 300px;
+    height: 300px !important;
+  }
+}
+
+.service-details {
+  flex: 1 1 400px;
 }
 
 @keyframes slideBackground {
@@ -143,6 +242,8 @@ header{
 .hero-content > * {
   position: relative;
   z-index: 2;
+  
+
 }
 
 .hero-content-ministries {
@@ -153,6 +254,7 @@ header{
   text-align: center;
   z-index: 2;
 }
+
 
 .head{
   font-size: 2.5rem;
@@ -213,7 +315,7 @@ header{
 }
 
 .ministries-page{
-  padding: 70px 90px;
+  padding: 40px 20px;
   display: flex;
   width: 100%;
   background-color: #eaf6f7;
@@ -277,24 +379,26 @@ header{
 }
 
 /* Give Online Button */
-.give-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #e9af10;
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
-}
 
-a.give-btn{
-  letter-spacing: 3px;
-  font-size: 12px;
-}
 
-.give-btn:hover {
+.give-btn{
+  position: relative;
+  width: 160px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
   background-color: #e9af10;
+  color: #fff;
+  transition: all 0.4s ease-in-out !important;
+  border-radius: 30px;
+
+}
+.give-btn:hover{
+  width: 170px !important;
+  color: white !important;
+  background-color: #f9b700;
 }
 
 /* Details Section */
@@ -302,16 +406,15 @@ a.give-btn{
   width: 100%;
   background-color: #e9af10;  /* White background */
   color: black;  /* Text color for sections with white background */
-  padding: 15px 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
 }
 
 .service{
   width: 100%;
-  padding: 80px 40px;
+  padding: 2rem 1rem;
   display: flex;
   gap: 40px;
   justify-content: center;
@@ -327,7 +430,7 @@ a.give-btn{
   justify-content: center;
   align-items: center;
   width: 60%;
-  padding: 30px; /* Add padding for spacing */
+  /* Add padding for spacing */
   line-height: 1.6; /* Increase line height for better readability */
 }
 
@@ -563,12 +666,11 @@ a.give-btn{
 /* General footer styling */
 .footer {
   background-color: #1b1f23;
-  padding: 80px 80px; /* Increase padding for better spacing */
+  padding: 40px 40px; /* Reduce padding for better spacing */
   color: white;
   display: block;
   width: 100%;
-  margin-top: 60px;
-
+  margin-top: 30px;
 }
 
 .footer-contain {
@@ -576,12 +678,13 @@ a.give-btn{
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   justify-content: center; /* Center menus in the container */
-  gap: 10px
+  gap: 10px;
 }
 
 .footer .menu {
   flex: 1 1 160px; /* Flexible width with minimum size */
 }
+
 
 .footer .menu ul {
   list-style: none;
@@ -797,6 +900,32 @@ a.give-btn{
     text-align: center;
     letter-spacing: 2px;
   }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 80%;
+    background: #1b1f23;
+    transition: 0.3s;
+    padding-top: 60px;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .toggle-nav {
+    display: flex !important;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .toggle-nav span {
+    width: 25px;
+    height: 3px;
+    background: #000;
+  }
 
 
 
@@ -866,6 +995,34 @@ a.give-btn{
   .give-btn {
     font-size: 14px;
     padding: 8px 15px;
+  }
+
+  .footer-contain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .menu {
+    text-align: center;
+  }
+
+  .footer .menu ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer .logo {
+    margin-top: 20px;
+  }
+
+  .social-icons {
+    float: none;
+    margin-top: 20px;
+  }
+
+  .copy h6 {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
   }
 }
 
@@ -938,7 +1095,104 @@ a.give-btn{
   color: black;  /* Text color for sections with white background */
   padding: 80px;
 }
-
+@media (max-width: 768px) {
+  .details-sec-belief{
+    padding: 1rem;
+  }
+  .details-contain-sec{
+    padding: 0 !important;
+    flex-direction: column;
+  }
+  .left-text-sec{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem !important;
+  }
+  
+  .right-text-sec{
+    width: 100% !important;
+    font-size: 1rem !important;
+  }
+  .details{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .details h1{
+    font-size: 1.5rem;
+  }
+  .pastor{
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .ministers-img{
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+  
+  .pastor-desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pastor-desc p{
+    width: 100%;
+  }
+  .cta-btn{
+    margin-bottom: 0.785rem;
+  }
+  .ministries-main{
+    flex-direction: column;
+    padding: 0 1rem !important;
+  }
+  .ministries-main-contain{
+    width: 100% !important;
+    padding: 1rem 0 !important;
+    margin-top: 2rem;
+  }
+  .ministers-img{
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  .ministries-text-02{
+    padding: 0 1rem;
+  }
+  .address{
+    padding: 0 1rem;
+  }
+  .schedule{
+    padding: 1rem !important;
+  }
+  .ministries-page{
+    padding: 1rem !important;
+  }
+  .ministries-page img{
+    width: 100% !important;
+  }
+  .details-ministies-ministry-paragraph{
+    font-size: 1.2rem;
+  }
+  .give-online-details{
+    flex-direction: column;
+    padding: 1rem !important;
+  }
+  .give-online-details-contain{
+    padding: 0 !important;
+  }
+  .give-online-paragraph{
+    font-size: 1rem;
+  }
+  .give-online-mail{
+    font-size: 1.7rem !important;
+  }
+  
+}
 .give-online-details{
   width: 100%;
   height: 80vh;
@@ -1138,17 +1392,12 @@ a.give-btn{
 
 /* Responsive Design */
 
+
 /* Extra small devices (phones, 320px and up) */
 @media screen and (max-width: 480px) {
-  .navbar {
-    flex-direction: column;
-    padding: 15px;
-  }
 
-  .navbar .nav-links {
-    flex-direction: column;
-    align-items: center;
-  }
+.head
+  
 
   .hero-content {
     padding: 50px 20px;
@@ -1176,7 +1425,7 @@ a.give-btn{
 
   .service {
     flex-direction: column;
-    padding: 50px 20px;
+    padding: 2rem 1rem;
     text-align: center;
   }
 
@@ -1191,14 +1440,62 @@ a.give-btn{
 
 /* Small devices (tablets, 481px - 768px) */
 @media screen and (max-width: 768px) {
-  .navbar {
-    padding: 15px 30px;
+ 
+  .nav-links {
+    position: fixed;
+    flex-direction: column !important;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+    height: 100vh;
+    left: 0;
+    font-weight: 100;
+    gap: 20px;
+    background-color: #000;
+    padding: 50px 0px 0px 0px;
+    z-index: 100000;
+    transform: translateY(-1000px);
+    transition: all 0.4s ease-in-out !important;
   }
-
-  .navbar .nav-links {
-    gap: 10px;
+  .logo1{
+    display: none  !important;
   }
+  .logo :last-child{
+    display: block !important;
+    height: 80px;
+  }
+  .fa-times{
+    display: block !important;
+  }
+  .cta-btn{
+  font-size: 20px !important;
+  }
+  .navbar a{
+    color: white !important;
+    font-size: 25px !important;
+    line-height: 1.9em;
+}
+.give-btn{
+  width: 300px !important;
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+.toggle-nav{
+    display: flex !important;
+    
+}
+.navbar{
+  display: flex !important;
+  position: relative;
+  flex-direction: row;
+  
 
+}
+.logo img{
+  width: 80px !important;
+}
   .hero-content {
     padding: 80px 30px;
   }
@@ -1220,7 +1517,7 @@ a.give-btn{
 
   .service {
     flex-direction: column;
-    padding: 60px 30px;
+    padding: 2rem 1rem;
   }
 
   .service-details {
@@ -1242,7 +1539,10 @@ a.give-btn{
 /* Medium devices (laptops, 769px - 1024px) */
 @media screen and (max-width: 1024px) {
   .navbar {
-    padding: 20px 50px;
+    padding: 10px 30px;
+  }
+  .logo1{
+    display: block;
   }
 
   .navbar .nav-links {
@@ -1267,11 +1567,11 @@ a.give-btn{
   }
 
   .service {
-    padding: 70px 50px;
+    padding: 2rem 1rem;
   }
 
   .service-details {
-    width: 70%;
+    
   }
 }
 
@@ -1280,7 +1580,7 @@ a.give-btn{
   .hero-content {
     padding: 100px;
   }
-
+ 
   .hero-content h1 {
     font-size: 4rem;
   }
@@ -1290,6 +1590,6 @@ a.give-btn{
   }
 
   .service {
-    padding: 80px 60px;
+    padding: 2rem 1rem;
   }
 }
